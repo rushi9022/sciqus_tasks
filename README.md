@@ -10,3 +10,16 @@ showcase your backend development and SQL skills.**
 ![Screenshot 2025-01-22 143517](https://github.com/user-attachments/assets/8cb2c572-5f90-4eb6-8d38-4777105e9959)
 ![Screenshot 2025-01-22 143529](https://github.com/user-attachments/assets/081691e2-bba7-4f32-a43e-6cd199caf9d0)
 ![Screenshot 2025-01-22 143545](https://github.com/user-attachments/assets/383ecdbb-dd25-4967-afe6-9bb02510c4f9)
+
+
+**Database Structure **
+
++-------------------+          +-------------------+          +--------------------+
+|     courses       |          |     students      |          |       users         |
++-------------------+          +-------------------+          +--------------------+
+| course_id (PK)    | 1   <--- | course_id (FK)    |          | user_id (PK)       |
+| course_name       |          | student_id (PK)   |          | username (Unique)  |
+| course_code (UQ)  |          | student_name      |          | password           |
+| course_duration   |          | email (UQ)       |          | role (enum)        |
++-------------------+          +-------------------+          | email (nullable)   |
+                                                              +--------------------+
