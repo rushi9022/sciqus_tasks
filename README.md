@@ -15,11 +15,11 @@ showcase your backend development and SQL skills.**
 **Database Structure **
 
 +-------------------+          +-------------------+          +--------------------+
-|     courses       |          |     students      |          |       users         |
+|     courses       |          |     students      |          |       users        |
 +-------------------+          +-------------------+          +--------------------+
 | course_id (PK)    | 1   <--- | course_id (FK)    |          | user_id (PK)       |
 | course_name       |          | student_id (PK)   |          | username (Unique)  |
 | course_code (UQ)  |          | student_name      |          | password           |
-| course_duration   |          | email (UQ)       |          | role (enum)        |
+| course_duration   |          | email (UQ)       |           | role (enum)        |
 +-------------------+          +-------------------+          | email (nullable)   |
                                                               +--------------------+
